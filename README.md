@@ -1,1 +1,1 @@
-# Personla-Website
+# Personal-Website
