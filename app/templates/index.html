@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerson Romero - Personal Website</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul
+        style="
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          background-color: #f0f0f0;
+          padding: 10px;
+        "
+      >
+        <li><a href="{{ url_for('main.index') }}">Home</a></li>
+        <li><a href="{{ url_for('main.resume') }}">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section style="text-align: center; margin-top: 50px">
+      <h1>Emerson Romero</h1>
+      <p>Welcome to my personal website!</p>
+
+      <!-- Social Links -->
+      <div style="margin-top: 20px">
+        <a href="https://github.com/EmersonMR25" target="_blank">GitHub</a> |
+        <a
+          href="https://www.linkedin.com/in/emerson-romero-0b5545206/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <footer
+      style="
+        text-align: center;
+        margin-top: 100px;
+        padding: 20px;
+        background-color: #f0f0f0;
+      "
+    >
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Emerson Romero, a first-generation college student majoring in
+        Linguistics and Spanish. I have a passion for language, technology, and
+        improving my community. Through my education and experiences, I strive
+        to build a better future for myself and my family.
+      </p>
+    </footer>
+  </body>
+</html>
