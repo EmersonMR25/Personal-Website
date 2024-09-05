@@ -104,31 +104,60 @@ nav .right a span {
   margin-bottom: 20px;
 }
 
-.skills-section .cells {
+/* PROJECT SECTION */
+.projects-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project-header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-header h3 a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.project-header h3 a:hover {
+  text-decoration: underline;
+}
+
+.project-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-skills {
   display: flex;
-  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.skills-section .cells .cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 200px;
-  padding: 10px 20px;
-  margin: 10px;
-  border: 1.5px solid #d3d3d3;
-  border-radius: 5px;
+.project-skills span {
+  font-size: 14px;
+  color: #888;
 }
 
-.skills-section .cells .cell img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  border-radius: 2px;
-}
-
-.skills-section .cells .cell span {
-  font-size: 18px;
-}
