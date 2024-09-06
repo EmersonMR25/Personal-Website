@@ -1,7 +1,8 @@
 :root {
   --text-color: #1a1c20;
-  --link-color: #4a76ee;
-  --background-color: #eeeff1;
+  --link-color: #7eb6ef;
+  --background-color: #f2eded; /* Updated background color */
+  --box-background-color: #ffffff; /* Box background color */
 }
 
 * {
@@ -60,64 +61,66 @@ nav .right a span {
 
 /* SECTION 1: Hero */
 .hero-section {
+  padding: 40px;
+  margin-bottom: 60px;
+  background-color: var(--box-background-color); /* Box background color */
+  border-radius: 10px;
+}
+
+.hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 50px 0;
-  margin-bottom: 100px;
   gap: 40px;
 }
 
-.hero-section .text {
+.hero-content .text {
   flex: 5;
 }
 
-.hero-section .text h2 {
+.hero-content .text h2 {
   font-size: 45px;
 }
 
-.hero-section .headshot {
+.hero-content .headshot {
   flex: 2;
   display: flex;
   justify-content: right;
 }
 
-.hero-section .headshot img {
+.hero-content .headshot img {
   width: 350px;
   border-radius: 50%;
 }
 
 /* SECTION 2: Skills */
 .skills-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: var(--box-background-color); /* Box background color */
+  border-radius: 10px;
 }
 
 .skills-section h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .skills-section .text {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 /* PROJECT SECTION */
 .projects-section {
   padding: 0 50px;
-  margin-bottom: 100px;
-}
-
-.projects-section h2 {
-  text-align: center;
-  font-size: 35px;
   margin-bottom: 40px;
 }
 
 .project {
-  background-color: #fff;
+  width: 100%; /* Ensures all boxes have the same width */
+  background-color: #f2eded;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -161,3 +164,11 @@ nav .right a span {
   color: #888;
 }
 
+/* Flexbox for even distribution */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Smaller gap between project boxes */
+  justify-content: space-between;
+  align-items: center;
+}
