@@ -4,6 +4,8 @@
 
 This is a personal website built with Flask. It showcases various projects, provides information about my background, and offers insights into my interests in technology, fitness, and reading. The site features a clean design with a responsive layout and hover effects on project boxes.
 
+Link to Website: https://emerson0425.pythonanywhere.com/
+
 ## Features
 
 - Display of project details with GitHub links
