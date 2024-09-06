@@ -5,6 +5,7 @@ def create_app():
 
     # Import and register routes
     from .routes import main
+    
     app.register_blueprint(main)
 
     return app
